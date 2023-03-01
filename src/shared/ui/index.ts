@@ -1,2 +1,2 @@
 // @ts-ignore
-export { Header } from 'remote-shared/ui'
+export { DemoHeader, DemoButton } from 'remote-shared/ui'

@@ -7,9 +7,11 @@ const StyledWbs = styled.div`
   justify-content: center;
 
   min-height: 48px;
+  margin: 0;
+  padding: 16px;
 
   color: white;
-  background: brown;
+  background: #333420;
 
   font-family: sans-serif;
 `
