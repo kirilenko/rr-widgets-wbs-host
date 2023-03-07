@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
       filename: 'remote-entry.js',
       name: 'remote-widgets-wbs',
       remotes: {
-        'remote-shared': 'http://localhost:3002/assets/remote-entry.js',
+        'remote-common': 'http://localhost:3002/assets/remote-entry.js',
       },
       shared: ['react', 'react-dom'],
     }),
