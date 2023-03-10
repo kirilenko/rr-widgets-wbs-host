@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => ({
     cssCodeSplit: false,
     minify: mode === 'production',
     modulePreload: false,
+    sourcemap: mode !== 'production',
     target: 'esnext',
   },
   plugins: [
