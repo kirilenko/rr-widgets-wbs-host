@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { withRenderLog } from '@app/providers'
 import { cnc, DivProps } from '@shared/lib'
 import { DemoButton, DemoHeader } from '@shared/ui'
 
@@ -18,4 +19,4 @@ const Wbs: FC<Props> = (props) => (
   </StyledWbs>
 )
 
-export default Wbs
+export default withRenderLog(Wbs)

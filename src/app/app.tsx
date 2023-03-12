@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Global } from '@emotion/react'
 
-import { withProviders } from '@app/providers'
+import { withProviders, withRenderLog } from '@app/providers'
 import { cnc, DivProps } from '@shared/lib'
 import Wbs from '@widgets/wbs'
 
@@ -19,4 +19,4 @@ const App: FC<Props> = (props) => (
   </>
 )
 
-export default withProviders(App)
+export default withProviders(withRenderLog(App))
