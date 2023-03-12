@@ -1,10 +1,15 @@
 import {
-  useEnvResolver as remoteUseEnvResolver,
-  withEnvResolver as remoteWithEnvResolver,
+  useEnvResolver as useRemoteEnvResolver,
+  withEnvResolverProvider as withRemoteEnvResolverProvider,
   // @ts-ignore
 } from 'remote-common/app/providers'
 
-import type { UseEnvResolver, WithEnvResolver } from './env-resolver.model'
+import type {
+  UseEnvResolver,
+  WithEnvResolverProvider,
+} from './env-resolver.model'
 
-export const useEnvResolver: UseEnvResolver = remoteUseEnvResolver
-export const withEnvResolver: WithEnvResolver<{}> = remoteWithEnvResolver
+export const useEnvResolver: UseEnvResolver = useRemoteEnvResolver
+
+export const withEnvResolverProvider: WithEnvResolverProvider<{}> =
+  withRemoteEnvResolverProvider

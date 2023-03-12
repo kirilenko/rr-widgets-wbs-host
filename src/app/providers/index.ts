@@ -1,11 +1,11 @@
 import compose from 'compose-function'
 
-import { withEnvResolver } from './env-resolver'
+import { withEnvResolverProvider } from './env-resolver'
 
 export const withProviders = compose(
-  withEnvResolver.bind({
+  withEnvResolverProvider.bind({
     env: import.meta.env,
   }),
 )
 
-export { useEnvResolver, withEnvResolver } from './env-resolver'
+export { useEnvResolver, withEnvResolverProvider } from './env-resolver'
